@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ShoeBrand</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- The image will be defined in css when in thsi case👇🏼 -->
+        <div class="hero-img"></div>
+        <div class="wrapper">
+            <header>
+                <!-- Brand is put in span so that its colour could be manipulated easily -->
+                <a href="#" class="logo">Shoe<span>Brand</span></a>
+
+                <nav class="nav">
+                        <svg class="close" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  
+                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g>
+                        <path d="M256,33C132.3,33,32,133.3,32,257c0,123.7,100.3,224,224,224c123.7,0,224-100.3,224-224C480,133.3,379.7,33,256,33z    
+                        M364.3,332.5c1.5,1.5,2.3,3.5,2.3,5.6c0,2.1-0.8,4.2-2.3,5.6l-21.6,21.7c-1.6,1.6-3.6,2.3-5.6,2.3c-2,0-4.1-0.8-5.6-2.3L256,289.8   
+                        l-75.4,75.7c-1.5,1.6-3.6,2.3-5.6,2.3c-2,0-4.1-0.8-5.6-2.3l-21.6-21.7c-1.5-1.5-2.3-3.5-2.3-5.6c0-2.1,0.8-4.2,2.3-5.6l75.7-76   
+                        l-75.9-75c-3.1-3.1-3.1-8.2,0-11.3l21.6-21.7c1.5-1.5,3.5-2.3,5.6-2.3c2.1,0,4.1,0.8,5.6,2.3l75.7,74.7l75.7-74.7   
+                        c1.5-1.5,3.5-2.3,5.6-2.3c2.1,0,4.1,0.8,5.6,2.3l21.6,21.7c3.1,3.1,3.1,8.2,0,11.3l-75.9,75L364.3,332.5z"/></g>
+                    </svg>
+
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sneakers</a></li>
+                        <li><a href="#">Players</a></li>
+                    </ul>
+
+                </nav>   
+
+                <svg class="menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
+                </svg>   
+            </header>
+            <section class="hero">
+                <h1>Regain your confidence on the court</h1>
+                
+                <p class="subhead">A shoe built with purpose and to take your game to the next level.</p>
+                <svg class="down-arrow" viewBox="0 0 16 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z" fill="black"/>
+                </svg>
+                    
+            </section>
+
+            <section class="more-info">
+                <div class="feature">
+                    <div class="content">
+                        <p class="title">Lightweight</p>
+                        <p class="desc">Upper mesh material provides proper ventilation and reduction in the weight of the shoes.</p>
+                    </div>
+                    <img src="images/shoe1.jpg" alt="Another Shoe">
+                </div>
+                <div class="feature left">
+                    <div class="content">
+                        <p class="title">Flexibility</p>
+                        <p class="desc">Soft, flexible soles will allow the walker to push off easly with each step.</p>
+                    </div>
+                    <img src="images/shoe2.jpg" alt="Another Shoe">
+                </div>
+                <div class="feature">
+                    <div class="content">
+                        <p class="title"> Durability</p>
+                        <p class="desc">Lightweight, woven material  is durable and provide structure and support.</p>
+                    </div>
+                    <img src="images/shoe3.jpg" alt="Another Shoe">
+                </div>
+            </section>
+        </div>
+
+        <!-- for hamburger to open up -->
+        <script>
+            const menu = document.querySelector('.menu')
+            const close = document.querySelector('.close')
+            const nav = document.querySelector('.nav')
+
+            //whatever happens here only happens when this elemet is clicked
+            menu.addEventListener('click', () => {
+                nav.classList.add('open-nav')
+                console.log('inside click nav')
+            })
+
+            close.addEventListener('click', () => {
+                nav.classList.remove('open-nav')
+                console.log('inside close nav')
+            })
+        </script>
+    </body>
+</html>
+
+
+
